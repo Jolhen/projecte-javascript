@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/JavascriptProject1/main.css">
+        <title>Cuenta atras</title>
+        <script src="datacount.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label class="title">Projecto OpenWebinars</label>
+                    <a href="/JavascriptProject1/projectes/countdown/countdown.html">Temporizador</a>
+                    <a href="/JavascriptProject1/projectes/contador/index.html">Contador</a>
+                    <a href="/JavascriptProject1/projectes/tempchange/converttemp.html">Cambio Temperatura</a>
+                    <a href="#">Projectos</a>
+                    <a href="/JavascriptProject1/index.html">Inicio</a>
+            </nav>
+        </header>
+        <main>
+        <p class="contadorTitle">Temporizador</p>
+        <div class="contadorMain">
+            <input type="number" class="contadorHora" value="00">
+            <label>:</label>
+            <input type="number" class="contadorMinutos" value="00">
+            <label>:</label>
+            <input type="number" class="contadorSegundos" value="00">
+        </div>
+        <button type="button" class="setContador">Comenzar temporizador</button>
+        <button type="button" class="stopContador" onclick="stopContador()">Parar temporizador</button>
+        <button type="button" class="resetContador">Reiniciar temporizador</button>
+        </main>
+    </body>
+</html>

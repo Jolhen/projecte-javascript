@@ -1,0 +1,127 @@
+.header {
+    background: #001B2E;
+    color: white;
+}
+.content {
+    background: #ADB6C4;
+}
+.lato-regular {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*general*/
+body{
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-family: "Lato", sans-serif;
+}
+
+/*main webpage*/
+main{
+    margin: 8px;
+}
+.postTitle{
+    font-size: 22px;
+}
+.postContent{
+    font-size: 14px;
+    text-align: justify;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*header*/
+.banner_image{
+    height: 5em;
+    width: 100%;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+header nav, .accountbtn{
+    overflow: hidden;
+    background-color: darkblue;
+}
+header nav .title{
+    float: left;
+}
+.title{
+    font-weight: bold;
+}
+header nav a, .title, .session{
+    float: right;
+    font-size: 16px;
+    padding: 8px 24px;
+    color: white;
+}
+header nav a{
+    display: block;
+    text-decoration: none;
+    text-align: center;
+}
+nav a:hover, .account-menu:hover .accountbtn, .sessionbtn {
+    background-color: #00003e;
+  }
+.account-menu{
+    float: right;
+    overflow: hidden;
+}
+.account-menu .accountbtn, .account-menu .sessionbtn{
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 24px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+.sessionbtn {
+    text-transform: capitalize;
+}
+.account-content{
+    font-size: 16px;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.account-content a{
+    float: none;
+    color: black;
+    padding: 8px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.account-content a:hover{
+    background-color: #ddd;
+}
+.account-menu:hover .account-content{
+    display: block;
+}
+
+/*footer*/
+footer {
+    background-color: #1a1818;
+    /*position: relative;*/
+    padding: 1em;
+    /*bottom: 0;*/
+    color: white;
+    margin-top: auto;
+}
+.about, .contact, .socials{
+    float: left;
+    width: 33%;
+}
+
+/*user*/
+.session{
+    text-transform: capitalize;
+}

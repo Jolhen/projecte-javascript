@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="/JavascriptProject1/main.css">
+        <title>Conversió de ºC a ºF</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label class="title">Projecto OpenWebinars</label>
+                <a href="/JavascriptProject1/projectes/countdown/countdown.html">Temporizador</a>
+                <a href="/JavascriptProject1/projectes/contador/index.html">Contador</a>
+                <a href="/JavascriptProject1/projectes/tempchange/converttemp.html">Cambio Temperatura</a>
+                <a href="#">Projectos</a>
+                <a href="/JavascriptProject1/index.html">Inicio</a>
+            </nav>
+        </header>
+        <main>
+        <h2>Conversió de Celsius a Fahrenheit</h2>
+        <input class="userTemp" type="text">
+        <button class="changeTemp" onclick="changeThisTemp()" type="button">Convertir</button>
+        <div>
+            <p class="textTemp">1ºC es igual a 33.8ºF</p>
+        </div>
+    </main>
+        <script>
+            function changeThisTemp(cTemp) {
+                let userTemp = document.querySelector(".userTemp").value;
+                let finalFahrenheit = userTemp * 9/5 + 32;
+                document.querySelector(".textTemp").innerHTML = `${userTemp}ºC es igual a ${finalFahrenheit}ºF`;
+            }
+        </script>
+    </body>
+</html>
