@@ -10,7 +10,7 @@
         <header>
             <nav>
                 <label class="title">Projecto OpenWebinars</label>
-                    <a href="/JavascriptProject1/projectes/countdown/countdown.html">Temporizador</a>
+                    <a href="/JavascriptProject1/projectes/countdown/temp.html">Temporizador</a>
                     <a href="/JavascriptProject1/projectes/contador/index.html">Contador</a>
                     <a href="/JavascriptProject1/projectes/tempchange/converttemp.html">Cambio Temperatura</a>
                     <a href="#">Projectos</a>
@@ -18,13 +18,16 @@
             </nav>
         </header>
         <main>
-        <p class="contadorTitle">Temporizador</p>
-        <div class="contadorMain">
-            <input type="number" class="contadorHora" value="00">
-            <label>:</label>
-            <input type="number" class="contadorMinutos" value="00">
-            <label>:</label>
-            <input type="number" class="contadorSegundos" value="00">
+        <h4 class="contadorTitle">Temporizador</h4>
+        <div class="contadorData">
+            <input type="number" class="contadorHora" placeholder="">
+            <input type="number" class="contadorMinutos">
+            <input type="number" class="contadorSegundos">
+        </div>
+        <div class="contadorView">
+            <span class="">00</span>
+            <span>00</span>
+            <span>00</span>
         </div>
         <button type="button" class="setContador">Comenzar temporizador</button>
         <button type="button" class="stopContador" onclick="stopContador()">Parar temporizador</button>

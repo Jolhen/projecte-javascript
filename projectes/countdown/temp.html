@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="../../main.css">
+        <link rel="stylesheet" href="menuTemp.css">
+        <title>Cuenta atras</title>
+        <script src="datatemp.js"></script>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <label class="title">Projecto OpenWebinars</label>
+                    <a href="/JavascriptProject1/projectes/countdown/temp.html">Temporizador</a>
+                    <a href="/JavascriptProject1/projectes/contador/index.html">Contador</a>
+                    <a href="/JavascriptProject1/projectes/tempchange/converttemp.html">Cambio Temperatura</a>
+                    <a href="#">Projectos</a>
+                    <a href="/JavascriptProject1/index.html">Inicio</a>
+            </nav>
+        </header>
+        <main>
+            <div class="windowTemp">
+                <h4>Temporizador</h4>
+                <div class="showTemp">
+                    <span class="showMinutes">00</span>
+                    <span>:</span>
+                    <span class="showSeconds">00</span>
+                </div>
+                <div class="menuTemp">
+                    <input type="number" id="setHours" placeholder="Horas...">
+                    <input type="number" id="setMinutes" placeholder="Minutos...">
+                    <input type="number" id="setSeconds" placeholder="Segundos...">
+                </div>
+                <div class="buttonsTemp">
+                    <button type="button" id="playTemp">Comenzar Temporizador</button>
+                    <button type="button" id="pauseTemp">Pausar Temporizador</button>
+                    <button type="button" id="resetTemp">Reiniciar Temporizador</button>
+                </div>
+                <div>
+                    <p class="advertErrors"></p>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>
